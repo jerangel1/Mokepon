@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background-image: url(./media/backgrounds/0a37fa4e744de6bc653a525b7fdff127.jpg);
+  background-color: #04364A;
+  background-position:top;
+  background-repeat: no-repeat;
+  margin: 0;
+  border:0;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: #FFA33C;
+  font-size: 64px;
+}
+.titulo img{
+    margin: 0;
+    border:0;
+    padding:0;
+}
+
+.subtitulo {
+  color: #FFFB73;
+  font-size: 32px;
+}
+.subtitulo img{
+    width:350px;
+    margin-top: -110px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    margin-top: 50px;
+  width: 180px;
+  height: 100px;
+  background: #11468F;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+#boton-mascota{
+
+}
+
+input {
+  display: none;
+}
+
+#boton-mascota{
+    margin-top: 20px;
+    background-color: #11468F;
+    padding: 20px 15px 20px 20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    border-radius: 25px;
+    color: whitesmoke;
+    cursor: pointer;
+}
