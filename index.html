@@ -10,35 +10,38 @@
 </head>
 
 <body>
+    <!--Seleccion de mascotas-->
     <section id="seleccionar-mascota">
         <h1 class="titulo"><img src="./media/tituloLogo/mokeponLogo.png" alt="Mokepon logo"></h1>
         <h2 class="subtitulo"><img src="./media/tituloLogo/escoge tu mascota.png" alt="escoge tu mascota"></h2>
         <div class="tarjetas">
+            <input type="radio" name="mascota" id="hipodoge" />
             <label class="tarjeta-de-mokepon" for="hipodoge">
                 <img src="./media/mokepones/hipodoge.png" alt="hipodoge">
                 <p>Hipodoge</p>
             </label>
-            <input type="radio" name="mascota" id="hipodoge" />
+            <input type="radio" name="mascota" id="capipepo" />
             <label class="tarjeta-de-mokepon" for="capipepo">
                 <img src="./media/mokepones/capipepo.png" alt="capipepo">
                 <p>Capipepo</p>
             </label>
-            <input type="radio" name="mascota" id="capipepo" />
+            <input type="radio" name="mascota" id="ratigueya" />
             <label class="tarjeta-de-mokepon" for="ratigueya">
                 <img src="./media/mokepones/ratigueya.png" alt="ratigueya">
                 <p>Ratigueya</p>
             </label>
-            <input type="radio" name="mascota" id="ratigueya" />
+
         </div>
         <button id="boton-mascota">Seleccionar</button>
     </section>
+
     <!--Pagina 2 Seleccionar Ataque-->
     <div class="elCombate">
         <section id="seleccionar-ataque">
             <h2><img src="https://fontmeme.com/permalink/231027/4cc67877e3912128d15188774f3c4be6.png"
                     alt="fuente-pokemon">
             </h2>
-            <div>
+            <div class="tarjeta-ataques">
                 <button class="boton-ataque" id="boton-fuego">
                     <p class="p-atk">Fuego</p>
                     <img class="img-ataque" src="./media/ataques/logofuego.png" alt="Ataque Fuego">
@@ -53,25 +56,31 @@
                 </button>
             </div>
             <div>
-                <section id="mensajes">
-                </section>
-
-                <section id="reiniciar">
-                    <button id="boton-reiniciar">Reiniciar</button>
-                </section>
+                <div id="mensajes">
+                    <p id="resultado">mucha suerte
+                    <section id="reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+                </div>
             </div>
+
             <!--Mostrar Seleccion de mascotas en combate-->
-            <div>
-                <p class="info-combate">Tu mascota es <span id="mascota-jugador"></span> y tiene <span
-                        id="vidas-jugador">3
-                    </span><span class="img-vidas"> <i class="fas fa-heart "></i></span></p>
-                <hr class="divisordecombate">
-                <img class="versus" src="./media/combate/versus.png" alt="versus logo">
-                <p class="info-combate">La mascota de tu enemigo es <span id="mascota-enemigo"></span> y tiene <span
-                        id="vidas-enemigo">3 </span><span class="img-vidas"> <i class="fas fa-heart "></i></span>
-                </p>
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p><span class="img-vidas"> <i class="fas fa-heart "></i></span>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <!--Divisor de combate-->
+                <!-- <hr class="divisordecombate">
+                <img class="versus" src="./media/combate/versus.png" alt="versus logo"> -->
+                <!--finaliza divisor combate-->
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p><span class="img-vidas"> <i class="fas fa-heart "></i></span>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
             </div>
-
         </section>
     </div>
     <footer> Desarrollado por <a href="" alt="github jerangel1">Jesús Rangel</a> para <span
