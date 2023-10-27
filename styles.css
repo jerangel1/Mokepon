@@ -2,12 +2,12 @@
 
 body {
   font-family: 'Fredoka One', cursive;
-  background-image: url(./media/backgrounds/0a37fa4e744de6bc653a525b7fdff127.jpg);
+  background-image: url(./media/backgrounds/wallpaperflare.com_wallpaper\ \(1\).jpg);
   background-color: #04364A;
-  background-position:top;
+  background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  border:0;
+  border: 0;
 }
 
 #seleccionar-mascota {
@@ -17,63 +17,147 @@ body {
   align-items: center;
 }
 
-.titulo {
-  color: #FFA33C;
-  font-size: 64px;
-}
-.titulo img{
-    margin: 0;
-    border:0;
-    padding:0;
+.titulo img {
+  width:550px;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
-.subtitulo {
-  color: #FFFB73;
-  font-size: 32px;
-}
-.subtitulo img{
-    width:350px;
-    margin-top: -110px;
+.subtitulo img {
+  width: 430px;
 }
 
 .tarjetas {
   display: flex;
-  gap: 10px;
+  gap: 25px;
+  
 }
 
 .tarjeta-de-mokepon {
-    margin-top: 50px;
-  width: 180px;
-  height: 100px;
-  background: #11468F;
-  padding: 10px;
+  margin-top: 0px;
+  width: 200px;
+  height: 200px;
+  background:#11468F;
+  padding: 40px;
   box-sizing: border-box;
   border-radius: 20px;
+  border:6px solid #FFA33C;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   cursor: pointer;
+  flex-direction: column;
 }
 
 .tarjeta-de-mokepon img {
-  width: 80px;
+  width: 130px;
 }
-#boton-mascota{
-
+.tarjeta-de-mokepon p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
 }
 
 input {
   display: none;
 }
 
-#boton-mascota{
-    margin-top: 20px;
-    background-color: #11468F;
-    padding: 20px 15px 20px 20px;
-    font-family: 'Fredoka One', cursive;
-    font-weight: 400;
-    border-radius: 25px;
-    color: whitesmoke;
-    cursor: pointer;
+#boton-mascota {
+  margin-top: 18px;
+  background-color: #11468F;
+  padding: 20px 15px 20px 20px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  border-radius: 25px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: 5px solid #FFA33C;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  text-align: center;
+  margin-top: 15px;
+  background-color: #11468F;
+  color: aliceblue;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 12px;
+  font-style: italic;
+}
+.dedicatoria{
+  font-style: italic;
+}
+#seleccionar-ataque{
+  text-align: center;
+}
+.boton-ataque{
+  margin-top: 18px;
+  background-color: #11468F;
+  padding: 20px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  border-radius: 25px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: 5px solid #FFA33C;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.img-ataque{
+  width: 100px;
+  flex-direction: column;
+  display: flex;
+  padding:10px;
+}
+.p-atk{
+  font-size: 24px;
+  font-style: italic;
+}
+.fas{
+  color: #ed2e0c;
+  font-size: 18px;
+}
+.info-combate{
+  margin:auto;
+  width:400px;
+  background-color: #11468F;
+  padding: 20px 15px 20px 20px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  border-radius: 25px;
+  color: whitesmoke;
+  border: 5px solid #FFA33C;
+  text-align: center;
+}
+.preview-seleccion{
+  background-color: #04364A;
+}
+.versus{
+  width:70px;
+  height:90px;
+  transform: rotate(19deg);
+  margin:0;
+  padding:0;
+  border:0;
+}
+.divisordecombate{
+  border:1px;
+  width:500px;
+}
+.elCombate{
+  background:url(./media/backgrounds/forest.jpg);
+  background-repeat: inherit;
+  background-position: center;
 }

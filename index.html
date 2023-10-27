@@ -6,6 +6,7 @@
     <title>MOKEPON!</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/710c0d5aa2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,46 +15,68 @@
         <h2 class="subtitulo"><img src="./media/tituloLogo/escoge tu mascota.png" alt="escoge tu mascota"></h2>
         <div class="tarjetas">
             <label class="tarjeta-de-mokepon" for="hipodoge">
-                <p>Hipodoge</p>
                 <img src="./media/mokepones/hipodoge.png" alt="hipodoge">
+                <p>Hipodoge</p>
             </label>
             <input type="radio" name="mascota" id="hipodoge" />
-
             <label class="tarjeta-de-mokepon" for="capipepo">
-                <p>Capipepo</p>
                 <img src="./media/mokepones/capipepo.png" alt="capipepo">
+                <p>Capipepo</p>
             </label>
             <input type="radio" name="mascota" id="capipepo" />
-
             <label class="tarjeta-de-mokepon" for="ratigueya">
-                <p>Ratigueya</p>
                 <img src="./media/mokepones/ratigueya.png" alt="ratigueya">
+                <p>Ratigueya</p>
             </label>
             <input type="radio" name="mascota" id="ratigueya" />
         </div>
         <button id="boton-mascota">Seleccionar</button>
     </section>
+    <!--Pagina 2 Seleccionar Ataque-->
+    <div class="elCombate">
+        <section id="seleccionar-ataque">
+            <h2><img src="https://fontmeme.com/permalink/231027/4cc67877e3912128d15188774f3c4be6.png"
+                    alt="fuente-pokemon">
+            </h2>
+            <div>
+                <button class="boton-ataque" id="boton-fuego">
+                    <p class="p-atk">Fuego</p>
+                    <img class="img-ataque" src="./media/ataques/logofuego.png" alt="Ataque Fuego">
+                </button>
+                <button class="boton-ataque" id="boton-agua">
+                    <p class="p-atk">Agua</p> <img class="img-ataque" src="./media/ataques/logo agua.png"
+                        alt="Ataque Agua">
+                </button>
+                <button class="boton-ataque" id="boton-tierra">
+                    <p class="p-atk">Tierra</p> <img class="img-ataque" src="./media/ataques/logo tierra.png"
+                        alt="Ataque Tierra">
+                </button>
+            </div>
+            <div>
+                <section id="mensajes">
+                </section>
 
-    <section id="seleccionar-ataque">
-        <h2>Elige tu ataque:</h2>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            <!--Mostrar Seleccion de mascotas en combate-->
+            <div>
+                <p class="info-combate">Tu mascota es <span id="mascota-jugador"></span> y tiene <span
+                        id="vidas-jugador">3
+                    </span><span class="img-vidas"> <i class="fas fa-heart "></i></span></p>
+                <hr class="divisordecombate">
+                <img class="versus" src="./media/combate/versus.png" alt="versus logo">
+                <p class="info-combate">La mascota de tu enemigo es <span id="mascota-enemigo"></span> y tiene <span
+                        id="vidas-enemigo">3 </span><span class="img-vidas"> <i class="fas fa-heart "></i></span>
+                </p>
+            </div>
 
-        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas
-        </p>
-
-        <p>
-            <button id="boton-fuego">Fuego 🔥</button>
-            <button id="boton-agua">Agua 💧</button>
-            <button id="boton-tierra">Tierra 🌱</button>
-        </p>
-    </section>
-
-    <section id="mensajes">
-    </section>
-
-    <section id="reiniciar">
-        <button id="boton-reiniciar">Reiniciar</button>
-    </section>
+        </section>
+    </div>
+    <footer> Desarrollado por <a href="" alt="github jerangel1">Jesús Rangel</a> para <span
+            class="dedicatoria">Lucas</span> y <span class="dedicatoria">Franco</span> <i class="far fa-heart"></i>
+    </footer>
 </body>
 
 </html>
