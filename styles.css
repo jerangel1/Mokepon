@@ -102,20 +102,19 @@ footer a{
 #seleccionar-ataque{
   text-align: center;
 }
-.boton-ataque{
+#boton-tierra , #boton-fuego, #boton-agua{
   margin-top: 18px;
   background-color: #11468F;
+  font-size: 40px;
   padding: 20px;
-  font-family: 'Fredoka One', cursive;
   font-weight: 400;
   border-radius: 25px;
-  color: whitesmoke;
   cursor: pointer;
   border: 5px solid #FFA33C;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-bottom: 18px;
+  gap:80px;
 }
 
 .img-ataque{
