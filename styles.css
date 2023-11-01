@@ -18,7 +18,7 @@ body {
 }
 
 .titulo img {
-  width:550px;
+  width: 550px;
   margin: 0;
   border: 0;
   padding: 0;
@@ -38,11 +38,11 @@ body {
   margin-top: 0px;
   width: 200px;
   height: 200px;
-  background:#11468F;
+  background: #11468F;
   padding: 40px;
   box-sizing: border-box;
   border-radius: 20px;
-  border:6px solid #FFA33C;
+  border: 6px solid #FFA33C;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,7 @@ body {
 .tarjeta-de-mokepon img {
   width: 130px;
 }
+
 .tarjeta-de-mokepon p {
   font-size: 18px;
   font-style: italic;
@@ -63,7 +64,8 @@ body {
 input {
   display: none;
 }
-input:checked + label {
+
+input:checked+label {
   background-color: #1A5D1A;
 }
 
@@ -81,7 +83,8 @@ input:checked + label {
   justify-content: center;
   align-items: center;
 }
-footer{
+
+footer {
   text-align: center;
   margin-top: 15px;
   background-color: #11468F;
@@ -90,19 +93,25 @@ footer{
   font-weight: 100;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-footer a{
+
+footer a {
   text-decoration: none;
   color: aliceblue;
   font-size: 12px;
   font-style: italic;
 }
-.dedicatoria{
+
+.dedicatoria {
   font-style: italic;
 }
-#seleccionar-ataque{
+
+#seleccionar-ataque {
   text-align: center;
 }
-#boton-tierra , #boton-fuego, #boton-agua{
+
+#boton-tierra,
+#boton-fuego,
+#boton-agua {
   margin-top: 18px;
   background-color: #11468F;
   font-size: 40px;
@@ -114,26 +123,29 @@ footer a{
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap:80px;
+  gap: 80px;
 }
 
-.img-ataque{
+.img-ataque {
   width: 100px;
   flex-direction: column;
   display: flex;
-  padding:10px;
+  padding: 10px;
 }
-.p-atk{
+
+.p-atk {
   font-size: 24px;
   font-style: italic;
 }
-.fas{
+
+.fas {
   color: #ed2e0c;
   font-size: 18px;
 }
-.info-combate{
-  margin:auto;
-  width:400px;
+
+.info-combate {
+  margin: auto;
+  width: 400px;
   background-color: #11468F;
   padding: 20px 15px 20px 20px;
   font-family: 'Fredoka One', cursive;
@@ -143,40 +155,44 @@ footer a{
   border: 5px solid #FFA33C;
   text-align: center;
 }
-#mensajes{
-width:280px;
-box-sizing: content-box;
-background: #EEEEEE;
-padding: 10px;
-margin: auto;
-border-radius: 20px;
-display: flex;
-justify-content: center;
-flex-direction: column;
+
+#mensajes {
+  width: 280px;
+  box-sizing: content-box;
+  background: #EEEEEE;
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.versus{
-  width:70px;
-  height:90px;
+.versus {
+  width: 70px;
+  height: 90px;
   transform: rotate(19deg);
-  margin:0;
-  padding:0;
-  border:0;
-}
-.divisordecombate{
-  border:1px;
-  width:500px;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-#boton-reiniciar{
-  border:5px solid #FFA33C;
-  padding:3px 15px 3px 15px;
-  color:whitesmoke;
+.divisordecombate {
+  border: 1px;
+  width: 500px;
+}
+
+#boton-reiniciar {
+  border: 5px solid #FFA33C;
+  padding: 3px 15px 3px 15px;
+  color: whitesmoke;
   cursor: pointer;
   border-radius: 25px;
-  background:#04364A
+  background: #04364A;
+  margin-bottom: 25px;
 }
-.ataques{
+
+.ataques {
   display: grid;
   grid-template-columns: 100px 100px;
   text-align: center;
@@ -185,17 +201,41 @@ flex-direction: column;
   justify-items: center;
 }
 
-@media (max-width:360px){
-  .tarjetas{
+@media (max-width:360px) {
+  .tarjetas {
     flex-direction: column;
   }
-  #mensajes{
-    width:100px;
+
+  #mensajes {
+    width: 100px;
   }
 }
-.ataques-jugador, .ataques-enemigo{
+
+.ataques-jugador,
+.ataques-enemigo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
+}
+
+#mensajes {
+  padding: 0px;
+  border: 0;
+  margin-top: 25px;
+  margin-top: 18px;
+  background: #11468F;
+  font-size: 28px;
+  font-weight: 400;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 5px solid #FFA33C;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultado {
+  color: whitesmoke;
+  font-family: 'Fredoka One', cursive;
 }
