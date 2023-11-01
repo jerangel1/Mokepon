@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <title>MOKEPON!</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/710c0d5aa2.js" crossorigin="anonymous"></script>
 </head>
@@ -14,46 +13,19 @@
     <section id="seleccionar-mascota">
         <h1 class="titulo"><img src="./media/tituloLogo/mokeponLogo.png" alt="Mokepon logo"></h1>
         <h2 class="subtitulo"><img src="./media/tituloLogo/escoge tu mascota.png" alt="escoge tu mascota"></h2>
-        <div class="tarjetas">
-            <input type="radio" name="mascota" id="hipodoge" />
-            <label class="tarjeta-de-mokepon" for="hipodoge">
-                <img src="./media/mokepones/hipodoge.png" alt="hipodoge">
-                <p>Hipodoge</p>
-            </label>
-            <input type="radio" name="mascota" id="capipepo" />
-            <label class="tarjeta-de-mokepon" for="capipepo">
-                <img src="./media/mokepones/capipepo.png" alt="capipepo">
-                <p>Capipepo</p>
-            </label>
-            <input type="radio" name="mascota" id="ratigueya" />
-            <label class="tarjeta-de-mokepon" for="ratigueya">
-                <img src="./media/mokepones/ratigueya.png" alt="ratigueya">
-                <p>Ratigueya</p>
-            </label>
-
+        <div id="contenedorTarjetas" class="tarjetas">
         </div>
         <button id="boton-mascota">Seleccionar</button>
     </section>
 
-    <!--Pagina 2 Seleccionar Ataque-->
+    <!--Pagina 2 Seleccionar Ataque/ botones de ataques-->
     <div class="elCombate">
         <section id="seleccionar-ataque">
             <h2><img src="https://fontmeme.com/permalink/231027/4cc67877e3912128d15188774f3c4be6.png"
                     alt="fuente-pokemon">
             </h2>
-            <div class="tarjeta-ataques">
-                <button class="boton-ataque" id="boton-fuego">
-                    <p class="p-atk">Fuego</p>
-                    <img class="img-ataque" src="./media/ataques/logofuego.png" alt="Ataque Fuego">
-                </button>
-                <button class="boton-ataque" id="boton-agua">
-                    <p class="p-atk">Agua</p> <img class="img-ataque" src="./media/ataques/logo agua.png"
-                        alt="Ataque Agua">
-                </button>
-                <button class="boton-ataque" id="boton-tierra">
-                    <p class="p-atk">Tierra</p> <img class="img-ataque" src="./media/ataques/logo tierra.png"
-                        alt="Ataque Tierra">
-                </button>
+            <!-- Botones de Ataque -->
+            <div id="contenedorAtaques" class="tarjeta-ataques">
             </div>
             <div>
                 <div id="mensajes">
@@ -63,20 +35,15 @@
                     </section>
                 </div>
             </div>
-
             <!--Mostrar Seleccion de mascotas en combate-->
             <div class="ataques">
                 <div class="ataques-jugador">
-                    <p id="vidas-jugador">3</p><span class="img-vidas"> <i class="fas fa-heart "></i></span>
+                    <p id="vidas-jugador">0</p>
                     <p id="mascota-jugador"></p>
                     <div id="ataques-del-jugador"></div>
                 </div>
-                <!--Divisor de combate-->
-                <!-- <hr class="divisordecombate">
-                <img class="versus" src="./media/combate/versus.png" alt="versus logo"> -->
-                <!--finaliza divisor combate-->
                 <div class="ataques-enemigo">
-                    <p id="vidas-enemigo">3</p><span class="img-vidas"> <i class="fas fa-heart "></i></span>
+                    <p id="vidas-enemigo">0</p>
                     <p id="mascota-enemigo"></p>
                     <div id="ataques-del-enemigo"></div>
                 </div>
@@ -86,6 +53,7 @@
     <footer> Desarrollado por <a href="" alt="github jerangel1">Jesús Rangel</a> para <span
             class="dedicatoria">Lucas</span> y <span class="dedicatoria">Franco</span> <i class="far fa-heart"></i>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
