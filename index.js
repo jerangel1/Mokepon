@@ -86,7 +86,6 @@ ratigueya.ataques.push(
     { nombre: '💧', id: 'boton-agua' },
 )
 
-
 mokepones.push(hipodoge, capipepo, ratigueya)
 
 function iniciarJuego() {
@@ -165,17 +164,20 @@ function secuenciaAtaque() {
                 ataqueJugador.push('FUEGO')
                 console.log(ataqueJugador)
                 //se cambia boton de fondo para saber que ataque se selecciono
-                boton.style.background = '#112f58'
+                boton.style.background = '#1A5D1A'
+                boton.disabled = true
             } else if (e.target.textContent === '💧') {
                 ataqueJugador.push('AGUA')
                 console.log(ataqueJugador)
                 //se cambia boton de fondo para saber que ataque se selecciono
-                boton.style.background = '#112f58'
+                boton.style.background = '#1A5D1A'
+                boton.disabled = true
             } else {
                 ataqueJugador.push('TIERRA')
                 console.log(ataqueJugador)
                 //se cambia boton de fondo para saber que ataque se selecciono
-                boton.style.background = '#112f58'
+                boton.style.background = '#1A5D1A'
+                boton.disabled = true
             }
             ataqueAleatorioEnemigo()
         })
@@ -267,9 +269,6 @@ function crearMensaje(resultado) {
 function crearMensajeFinal(resultadoFinal) {
     let parrafo = document.createElement('p')
     sectionMensajes.innerHTML = resultadoFinal
-    botonFuego.disabled = true
-    botonAgua.disabled = true
-    botonTierra.disabled = true
     sectionReiniciar.style.display = 'block'
 }
 
