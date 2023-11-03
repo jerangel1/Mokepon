@@ -240,3 +240,13 @@ footer a {
   color: whitesmoke;
   font-family: 'Fredoka One', cursive;
 }
+
+#ver-mapa{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mapa{
+  border: 2px solid white;
+}
