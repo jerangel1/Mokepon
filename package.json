@@ -1,0 +1,18 @@
+{
+  "name": "mokepon",
+  "version": "1.0.0",
+  "description": "juego emblematico de combate de mascotas",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Mokepon"
+  },
+  "author": "Jesus Rangel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
