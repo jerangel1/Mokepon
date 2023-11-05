@@ -107,7 +107,11 @@ footer a {
 
 #seleccionar-ataque {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 #boton-tierra,
 #boton-fuego,
@@ -136,11 +140,6 @@ footer a {
 .p-atk {
   font-size: 24px;
   font-style: italic;
-}
-
-.fas {
-  color: #ed2e0c;
-  font-size: 18px;
 }
 
 .info-combate {
@@ -241,12 +240,65 @@ footer a {
   font-family: 'Fredoka One', cursive;
 }
 
-#ver-mapa{
+#ver-mapa {
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#mapa{
+#mapa {
   border: 2px solid white;
+}
+
+/*Titulo del canva*/
+.titulo {
+  color: #EEEEEE;
+  font-size: 24px;
+  padding: 0px;
+  border: 0;
+  margin-top: 25px;
+  margin-top: 18px;
+  background: #11468F;
+  padding: 5px 12px 5px 12px;
+  font-size: 28px;
+  font-weight: 400;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 5px solid #FFA33C;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#ver-mapa button{
+  margin-top: 18px;
+  background-color: #11468F;
+  font-family: 'Fredoka One', cursive;
+  padding:15px;
+  font-weight: 400;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 5px solid #FFA33C;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 24px;
+  gap:10px;
+}
+
+
+@media (max-width: 560px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  #ver-mapa div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
