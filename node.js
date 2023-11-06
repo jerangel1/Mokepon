@@ -37,7 +37,7 @@ app.get("/unirse", (req, res) => {
   jugadores.push(jugador)
 
   res.setHeader("Access-Control-Allow-Origin", "*")
-  
+
   res.send(id)
 })
 
@@ -45,13 +45,13 @@ app.post("/mokepon/:jugadorId", (req, res) => {
   const jugadorId = req.params.jugadorId || ""
   const nombre = req.body.mokepon || ""
   const mokepon = new Mokepon(nombre)
-  
+
   const jugadorIndex = jugadores.findIndex((jugador) => jugadorId === jugador.id)
 
   if (jugadorIndex >= 0) {
     jugadores[jugadorIndex].asignarMokepon(mokepon)
   }
-  
+
   console.log(jugadores)
   console.log(jugadorId)
   res.end()
@@ -73,6 +73,20 @@ app.post("/mokepon/:jugadorId/posicion", (req, res) => {
   res.send({
     enemigos
   })
+})
+
+
+app.post("/mokepon/:jugadorId/ataques", (req, res) => {
+  const jugadorId = req.params.jugadorId || ""
+  const ataques = req.body.ataques || []
+
+  const jugadorIndex = jugadores.findIndex((jugador) => jugadorId === jugador.id)
+
+  if (jugadorIndex >= 0) {
+    jugadores[jugadorIndex].asignarAtaques(ataques)
+  }
+
+  res.end()
 })
 
 app.listen(8080, () => {
