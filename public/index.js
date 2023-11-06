@@ -159,7 +159,7 @@ function iniciarJuego() {
 }
 
 function unirseAlJuego() {
-    fetch("https://apimokepon.web.app/unirse")
+    fetch("http://localhost:8080/unirse")
         .then(function (res) {
             if (res.ok) {
                 res.text()
@@ -194,7 +194,7 @@ function seleccionarMascotaJugador() {
     iniciarMapa()
 }
 function seleccionarMokepon(mascotaJugador) {
-    fetch(`http://apimokepon.web.app/mokepon/${jugadorId}`, {
+    fetch(`http://localhost:8080/mokepon/${jugadorId}`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
@@ -260,7 +260,7 @@ function secuenciaAtaque() {
 }
 
 function enviarAtaques() {
-    fetch(`http://apimokepon.web.app/mokepon/${jugadorId}/ataques`, {
+    fetch(`http://localhost:8080/mokepon/${jugadorId}/ataques`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"
@@ -272,7 +272,7 @@ function enviarAtaques() {
     Interval = setInterval(obtenerAtaques, 50)
 }
 function obtenerAtaques() {
-    fetch(`http://apimokepon.web.app/mokepon/${enemigoId}/ataques`)
+    fetch(`http://localhost:8080/mokepon/${enemigoId}/ataques`)
         .then(function (res) {
             if (res.ok) {
                 res.json()
@@ -415,7 +415,7 @@ function pintarCanvas() {
 }
 
 function enviarPosicion(x, y) {
-    fetch(`https://apimokepon.web.app/mokepon/${jugadorId}/posicion`, {
+    fetch(`http://localhost:8080/mokepon/${jugadorId}/posicion`, {
         method: "post",
         headers: {
             "Content-Type": "application/json"

@@ -3,14 +3,16 @@ const cors = require("cors")
 
 const app = express()
 
+app.use(express.static('public'))
 app.use(cors())
 app.use(express.json())
 
 const jugadores = []
 
 class Jugador {
-  constructor(id) {
+  constructor(id, jugadoresIndex) {
     this.id = id
+    this.jugadoresIndex = jugadoresIndex
   }
 
   asignarMokepon(mokepon) {
@@ -36,7 +38,7 @@ class Mokepon {
 app.get("/unirse", (req, res) => {
   const id = `${Math.random()}`
 
-  const jugador = new Jugador(id)
+  const jugador = new Jugador(id, jugadores.length)
 
   jugadores.push(jugador)
 
@@ -88,7 +90,6 @@ app.post("/mokepon/:jugadorId/ataques", (req, res) => {
   if (jugadorIndex >= 0) {
     jugadores[jugadorIndex].asignarAtaques(ataques)
   }
-
   res.end()
 })
 
