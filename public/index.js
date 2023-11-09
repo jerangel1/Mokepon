@@ -159,7 +159,7 @@ function iniciarJuego() {
 }
 
 function unirseAlJuego() {
-    fetch("http://localhost:8080/unirse")
+    fetch("https://apimokepon.web.app")
         .then(function (res) {
             if (res.ok) {
                 res.text()
@@ -415,8 +415,8 @@ function pintarCanvas() {
 }
 
 function enviarPosicion(x, y) {
-    fetch(`http://localhost:8080/mokepon/${jugadorId}/posicion`, {
-        method: "post",
+    fetch(`https://apimokepon.web.app/mokepon/${jugadorId}/posicion`, {
+        method: "POST",
         headers: {
             "Content-Type": "application/json"
         },

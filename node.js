@@ -4,7 +4,11 @@ const cors = require("cors")
 const app = express()
 
 app.use(express.static('public'))
-app.use(cors())
+app.use(cors({
+  origin: ["https://apimokepon.web.app"],   
+  allowedHeaders: ["Content-Type"],
+  allowedMethods: ["GET", "POST"],
+}))
 app.use(express.json())
 
 const jugadores = []
@@ -101,6 +105,10 @@ app.get("/mokepon/:jugadorId/ataques", (req, res) => {
   })
 })
 
-app.listen(8080, () => {
-  console.log("Servidor funcionando")
+app.post("/mokepon/null/posicion", (req, res) => {
+  res.send({
+    error: "El jugador no existe"
+  })
 })
+
+app.listen

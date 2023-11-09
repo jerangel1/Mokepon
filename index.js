@@ -159,7 +159,7 @@ function iniciarJuego() {
 }
 
 function unirseAlJuego() {
-    fetch("https://apimokepon.web.app/unirse")
+    fetch("https://apimokepon.web.app")
         .then(function (res) {
             if (res.ok) {
                 res.text()
